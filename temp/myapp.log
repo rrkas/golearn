@@ -1,0 +1,6 @@
+APP: 2022/05/23 11:26:53 28_logging.go:45: This is error message 1
+APP: 2022/05/23 11:26:53 28_logging.go:46: This is error message 2
+APP: 2022/05/23 11:26:53 28_logging.go:47: This is error message 3
+APP: 2022/05/23 11:42:11 28_logging.go:45: This is error message 1
+APP: 2022/05/23 11:42:11 28_logging.go:46: This is error message 2
+APP: 2022/05/23 11:42:11 28_logging.go:47: This is error message 3

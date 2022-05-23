@@ -1,0 +1,158 @@
+package:
+    - contains one/ more .go files
+    - a go src file MUST be in exactly 1 package
+    - packages are reusable and modularize a large project
+
+module (application/ package):
+    - contains one/ more packages
+    - can version control packages
+
+
+var  ======================================================== [go_by_example\02_variables.go]
+declaring syntax:
+var var_name datatype
+
+assigning syntax:
+var_name = value
+
+declare & assign syntax:
+var var_name datatype = value
+
+shorthand declare & assign syntax:
+var_name := value
+
+comment ======================================================== [go_by_example\02_variables.go]
+// single line comment
+/*
+    multiline comment
+*/
+
+typecasting ==================================================== [go_by_example\03_arithmetic.go]
+no implicit typecasting
+
+explicit typecasting syntax:
+newDataTypeVariable = Type(oldDataTypeVariable)
+
+operators =====================================================
+[
+    go_by_example\03_arithmetic.go
+    go_by_example\05_increment_decrement.go
+    go_by_example\07_comparison.go
+    go_by_example\08_logical.go
+]
+
+a+b     a-b     a*b     a/b
+a++     a--
+a>b     a>=b    a<b     a<=b    a==b    a!=b
+&&      ||      !
+
+conditional statements ==================================
+[
+    go_by_example\09_if_else.go
+    go_by_example\10_switch.go
+]
+
+if conditional {
+    // do something
+} else {
+    // do another job
+}
+
+switch option {
+    case option1:
+        // do option1 job
+    case option2:
+        // do option2 job
+}
+
+iterations ==============================================
+[
+    go_by_example\11_for.go
+    go_by_example\12_break_continue.go
+]
+
+for initialization;conditional;increment/decrement {
+    // statements
+}
+
+// like while
+for conditional {
+    // statements
+}
+
+array ============================================================= [go_by_example\13_array.go]
+declaring syntax:
+var var_name[size1] datatype
+var var_name[size1][size2] datatype
+etc for multi-dimensions
+
+Slice ============================================================= [go_by_example\14_slice.go]
+A slice is a convenient, flexible and powerful wrapper on top of an array. 
+Slices do not own any data on their own. 
+They are just references to existing arrays.
+
+syntax:
+var var_name []datatype = make([]datatype, size)
+var_name := make([]datatype, size)
+
+map ============================================================== [go_by_example\15_map.go]
+key-value pairs
+
+syntax:
+var_name := make(map[key_datatype]value_datatype)
+
+functions ======================================================== [go_by_example\16_functions.go]
+
+closure function: a function defined inside a function
+
+syntax:
+func function_name(argument_list) return_datatype {
+    // statements
+    return foo // if any returns
+}
+
+pointers =========================================================
+[
+    go_by_example\17_pointers.go
+    go_by_example\18_linked_list.go
+]
+
+A pointer is a programming language object, whose value refers directly to (or “points to”)
+another value stored elsewhere in the computer memory using its address, ref:
+http://en.wikipedia.org/wiki/Pointer_(computer_programming)
+
+syntax:
+var addr *datatype
+addr := &existing_var
+addr := new(datatype)
+
+struct & methods ======================================================
+[
+    go_by_example\18_linked_list.go
+    go_by_example\20_methods.go
+]
+
+syntax:
+type struct_name struct {
+    // fields
+}
+
+func (var_name struct_name) function_name(argument_list) return_datatype {
+    // statements
+    return foo // if any returns
+}
+
+error handling ===========================================================
+[
+    go_by_example\23_error.go
+]
+
+panic(): raise error
+
+defer:
+A defer statement defers the execution of a function until the surrounding function returns.
+The deferred call's arguments are evaluated immediately, 
+but the function call is not executed until the surrounding function returns.
+
+go get github.com/manucorporat/try
+
