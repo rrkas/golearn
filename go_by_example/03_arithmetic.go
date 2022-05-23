@@ -18,7 +18,7 @@ func main() {
 	// division
 	e := float32(a) / float32(b)
 	fmt.Printf("%d / %d = %.2f \n", a, b, e)
-	fmt.Printf("%d / %d = %v (int) \n", a, b, a / b)
+	fmt.Printf("%d / %d = %v (int) \n", a, b, a/b)
 
 	// multiplication
 	f := a * b

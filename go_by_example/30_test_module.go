@@ -1,8 +1,8 @@
 package main
 
-import(
+import (
 	"fmt"
-	"github.com/rrkas/golearn/go_by_example/simplemaths"
+	"simplemodule"
 )
 
 func main() {

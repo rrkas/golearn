@@ -142,9 +142,14 @@ func (var_name struct_name) function_name(argument_list) return_datatype {
     return foo // if any returns
 }
 
-error handling ===========================================================
+error handling & logging ===========================================================
 [
     go_by_example\23_error.go
+    go_by_example\24_panic.go
+    go_by_example\25_defer.go
+    go_by_example\26_error_handling.go
+    go_by_example\27_try.go
+    go_by_example\28_logging.go
 ]
 
 panic(): raise error
@@ -156,3 +161,14 @@ but the function call is not executed until the surrounding function returns.
 
 go get github.com/manucorporat/try
 
+concurrency =========================================================================
+[
+    go_by_example\31_goroutines.go
+    go_by_example\32_sync_goroutines.go
+    go_by_example\33_channel.go
+]
+
+We can create channels in Go and then we can communicate among Goroutines using these channel. 
+For illustration, we create a channel which hold number data. 
+To insert data in channel, we can use channel <-. 
+Otherwise, we can get data from a channel using <-channel.

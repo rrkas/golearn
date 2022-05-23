@@ -1,4 +1,4 @@
-module github.com/rrkas/ytGo
+module github.com/rrkas/golearn
 
 go 1.17
 
